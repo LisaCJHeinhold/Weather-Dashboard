@@ -16,20 +16,23 @@
   <main class="flex-row justify-space-between">
     <div class="container">
         <div class="row justify-content-between">
-            <div class="col card">
+            <div class="col-12 col-md-4 card">
                 <h2 class="card-header">Search For a City:</h2>
                 <form>
-                    <input name="city" type="text" autofocus="true"/>
-                    <button type="submit" class="btn">Search</button>
+                    <input name="city" type="text" autofocus="true" class="form-input"/>
+                    <button type="submit" class="btn" id="searchBtn">Search</button>
                 </form>
             </div>
             <div class="col">
-                <h2>City name</h2>
+                <h2 class="city-name">City name</h2>
             </div>
         </div>
         <div class="row justify-content-between">
-            <div class="col">
+            <div class="col-12 col-md-4">
                 <h2>Recent Searches:</h2>
+            </div>
+            <div class="current-info">]
+                
             </div>
             <div class="col">
                 <h2>5-Day Forecast:</h2>
@@ -37,6 +40,8 @@
         </div>
     </div>
   </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="./assets/script.js"></script>
 </body>
 </html>
